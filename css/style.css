@@ -47,7 +47,7 @@ section {
 }
 
 .back {
-  background-image: url("../img/pokeball.png");
+  background-image: url("/memory-game-javascript/img/pokeball.png");
   background-repeat: no-repeat;
   background-size: contain;
   backface-visibility: hidden;
