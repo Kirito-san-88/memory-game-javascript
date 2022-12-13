@@ -161,8 +161,10 @@ document.addEventListener("DOMContentLoaded", () => {
           modal.style.display = "block";
           modal.style.backgroundColor = "red";
           paragrapheText.textContent = "You lose !";
+          section.style.pointerEvents = "none";
           span.addEventListener("click", () => {
             modal.style.display = "none";
+
             restart();
           });
         }
@@ -172,8 +174,10 @@ document.addEventListener("DOMContentLoaded", () => {
       modal.style.display = "block";
       modal.style.backgroundColor = "green";
       paragrapheText.textContent = "You won!";
+      section.style.pointerEvents = "none";
       span.addEventListener("click", () => {
         modal.style.display = "none";
+
         restart();
       });
     }
