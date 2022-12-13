@@ -163,8 +163,8 @@ document.addEventListener("DOMContentLoaded", () => {
           paragrapheText.textContent = "You lose !";
           span.addEventListener("click", () => {
             modal.style.display = "none";
+            restart();
           });
-          restart();
         }
       }
     }
@@ -174,8 +174,8 @@ document.addEventListener("DOMContentLoaded", () => {
       paragrapheText.textContent = "You won!";
       span.addEventListener("click", () => {
         modal.style.display = "none";
+        restart();
       });
-      restart();
     }
   };
   // making a restart function
