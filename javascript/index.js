@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const section = document.querySelector("section");
   const playerLivesCount = document.querySelector("span");
-  let playerLives = 6;
+  let playerLives = 10;
   const modal = document.querySelector(".modal");
   const span = document.querySelector(".close");
   let paragrapheText = document.querySelector(".winOrLose");
@@ -160,7 +160,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (playerLives === 0) {
           modal.style.display = "block";
           modal.style.backgroundColor = "red";
-          paragrapheText.textContent = "You lose !";
+          paragrapheText.textContent = "You lose ! \r\n 👎";
           section.style.pointerEvents = "none";
           span.addEventListener("click", () => {
             modal.style.display = "none";
@@ -173,7 +173,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (toggleCard.length === 20) {
       modal.style.display = "block";
       modal.style.backgroundColor = "green";
-      paragrapheText.textContent = "You won!";
+      paragrapheText.textContent = "You won! \r\n 👍";
       section.style.pointerEvents = "none";
       span.addEventListener("click", () => {
         modal.style.display = "none";
@@ -199,25 +199,9 @@ document.addEventListener("DOMContentLoaded", () => {
         section.style.pointerEvents = "all";
       }, 1000);
     });
-    playerLives = 6;
+    playerLives = 10;
     playerLivesCount.textContent = playerLives;
   };
-
-  // const winner = () => {
-  //   let modal = document.querySelector(".modal");
-  //   let win = document.querySelector(".win");
-  //   let span = document.querySelectorAll(".close")[0];
-  //   span.addEventListener("click", () => {
-  //     modal.style.display = "none";
-  //     span.textContent = "You Won"
-  //   });
-  //   modal.style.display = "block";
-  //   window.addEventListener("click", (e) => {
-  //     if (e.target == modal) {
-  //       modal.style.display = "none";
-  //     }
-  //   });
-  // };
 
   cardGenerate();
 });

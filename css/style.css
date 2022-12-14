@@ -85,3 +85,12 @@ section {
   margin: 50px auto;
   text-align: center;
 }
+@media screen and (max-width: 400px) {
+  section {
+    grid-template-columns: repeat(5, 4rem);
+    grid-template-rows: repeat(5, 4rem);
+  }
+  .modal {
+    width: 50vh;
+  }
+}
