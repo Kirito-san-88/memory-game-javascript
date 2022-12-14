@@ -22,6 +22,9 @@ h1,
 h3 {
   margin: 2rem auto;
 }
+h1 {
+  font-size: 30px;
+}
 
 section {
   display: grid;
@@ -87,8 +90,8 @@ section {
 }
 @media screen and (max-width: 400px) {
   section {
-    grid-template-columns: repeat(5, 4rem);
-    grid-template-rows: repeat(5, 4rem);
+    grid-template-columns: repeat(5, 3.5rem);
+    grid-template-rows: repeat(5, 3.5rem);
   }
   .modal {
     width: 50vh;
