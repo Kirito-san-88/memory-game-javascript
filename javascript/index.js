@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const section = document.querySelector("section");
   const playerLivesCount = document.querySelector("span");
-  let playerLives = 20;
+  let playerLives = 15;
   const modal = document.querySelector(".modal");
   const span = document.querySelector(".close");
   let paragrapheText = document.querySelector(".winOrLose");
@@ -199,7 +199,7 @@ document.addEventListener("DOMContentLoaded", () => {
         section.style.pointerEvents = "all";
       }, 1000);
     });
-    playerLives = 20;
+    playerLives = 15;
     playerLivesCount.textContent = playerLives;
   };
 
