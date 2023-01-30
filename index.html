@@ -4,18 +4,45 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:locale:alternate" content="fr_FR" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Memory Game in Javascript" />
+    <meta
+      property="og:description"
+      content="Amusez vous sur ce jeu de memory pokemon"
+    />
+    <meta property="og:site_name" content="Memory Game in Javascript" />
+    <meta property="og:image" content="./img/pokeball.png" />
     <title>Memory Game</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <h1>Memory Game in Javascript</h1>
-    <h3>Lives: <span class="playerLivesCount"></span></h3>
-    <div class="modal">      
+    <div class="container">
+      <h1>Memory Game in Javascript</h1>
+      <h3>Lives: <span class="playerLivesCount"></span></h3>
+      <span class="difficulty"></span>
+      <div class="modal">
         <span class="close">&times;</span>
-        <p class="winOrLose"></p>     
+        <p class="winOrLose"></p>
+      </div>
+      <div class="form" id="form">
+        <input type="radio" id="easy" name="difficulty" value="easy" />
+        <label for="easy">Easy</label>
+        <input
+          type="radio"
+          id="normal"
+          name="difficulty"
+          value="normal"
+          checked="checked"
+        />
+        <label class="checked" for="normal">Normal</label>
+        <input type="radio" id="hard" name="difficulty" value="hard" />
+        <label for="hard">Hard</label>
+      </div>
+      <section id="game"></section>
     </div>
-    <section class="game"></section>
 
-    <script src="./javascript/index.js"></script>
+    <script src="javascript/index.js"></script>
   </body>
 </html>
